@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Skill from "../components/skills";
 import AboutUs from "../components/aboutUs";
 import Products from "../components/products";
+import Contact from "../components/contact";
 
 const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage = () => {
       <Skill />
       <AboutUs />
       <Products />
+      <Contact />
     </section>
   );
 };
