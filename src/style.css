@@ -286,3 +286,27 @@ div.content-divider {
   }
 }
 /* end of Skills*/
+
+/* Products*/
+.products {
+  background: var(--mainDark);
+}
+.products-info,
+.products-inventory {
+  padding: 2rem 0;
+}
+.products-text {
+  color: var(--mainWhite);
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+.products-img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.products {
+  padding: 2rem 0;
+}
+/* end of Products*/
