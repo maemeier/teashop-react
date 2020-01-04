@@ -29,18 +29,18 @@ const Products = () => {
             <h3 className="products-title ">Products Title</h3>
             <h3 className="products-price">6,99 CHF</h3>
           </div>
-        </div>
 
-        <div class="product">
-          <img src={About1} alt="tea" className="products-img" />
-          <h3 className="products-title">Products Title</h3>
-          <h3 className="products-price">6,99 CHF</h3>
-        </div>
+          <div class="product">
+            <img src={About1} alt="tea" className="products-img" />
+            <h3 className="products-title">Products Title</h3>
+            <h3 className="products-price">6,99 CHF</h3>
+          </div>
 
-        <div class="product">
-          <img src={About1} alt="tea" className="products-img" />
-          <h3 className="products-title">Products Title</h3>
-          <h3 className="products-price">6,99 CHF</h3>
+          <div class="product">
+            <img src={About1} alt="tea" className="products-img" />
+            <h3 className="products-title">Products Title</h3>
+            <h3 className="products-price">6,99 CHF</h3>
+          </div>
         </div>
       </div>
     </div>
