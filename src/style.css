@@ -11,6 +11,13 @@
   --mainDark: #3a3e3b;
   --mainWhite: #ffff;
   --mainGrey: #e5e5e5;
+  --mainBrown: #6e6757;
+  --hover: linear-gradient(
+    277deg,
+    rgba(59, 58, 56, 1) 0%,
+    rgba(81, 77, 66, 1) 50%,
+    rgba(45, 43, 37, 1) 100%
+  );
   --mainTransition: all 0.3s ease-in-out;
   --letterSpacing: 0.5rem;
 }
@@ -26,7 +33,7 @@ h1 {
 
 /* Header*/
 .header {
-  min-height: 100vh;
+  min-height: 70vh;
   background: url("./img/tea3.jpg") center/cover no-repeat fixed;
   position: relative;
 }
@@ -46,7 +53,12 @@ a {
   color: var(--primaryColor);
 }
 /* clear fix*/
-
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
 /* Banner*/
 .banner {
   position: absolute;
@@ -139,3 +151,76 @@ a {
 }
 /* end animation Banner*/
 /* End Banner*/
+/* content divider*/
+div.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--primaryColor),
+    var(--mainBrown),
+    var(--primaryColor)
+  );
+}
+/* edn content divider*/
+
+/* Skills*/
+.skills {
+  background-color: var(--mainBrown);
+  color: var(--mainWhite);
+}
+.skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--mainTransition);
+}
+.skill-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  transition: var(--mainTransition);
+  display: inline-block;
+}
+.skill-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing);
+  margin-bottom: 1.5rem;
+  color: var(--primaryColor);
+}
+.skill-text {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  max-width: 13rem;
+  margin: 0 auto;
+}
+.skill:hover {
+  background: var(--primaryColor);
+}
+.skill:hover .skill-title {
+  color: var(--mainWhite);
+}
+.skill:hover .skill-icon {
+  transform: translateY(-5px);
+}
+@media screen and (min-width: 576px) {
+  .skills {
+    background-color: var(--mainBrown);
+    color: var(--mainWhite);
+  }
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills {
+    background-color: var(--mainBrown);
+    color: var(--mainWhite);
+  }
+  .skill {
+    width: 25%;
+  }
+}
+/* end of Skills*/
