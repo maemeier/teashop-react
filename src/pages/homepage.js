@@ -6,6 +6,7 @@ import Skill from "../components/skills";
 import AboutUs from "../components/aboutUs";
 import Products from "../components/products";
 import Contact from "../components/contact";
+import Footer from "../components/footer";
 
 const Homepage = () => {
   return (
@@ -16,6 +17,7 @@ const Homepage = () => {
       <AboutUs />
       <Products />
       <Contact />
+      <Footer />
     </section>
   );
 };

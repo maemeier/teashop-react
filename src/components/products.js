@@ -1,6 +1,9 @@
 import React from "react";
 import About from "../img/tea1.jpg";
 import About1 from "../img/tea4.png";
+import blackTea from "../img/black.png";
+import green from "../img/green.png";
+import red from "../img/red.png";
 
 const Products = () => {
   return (
@@ -25,20 +28,20 @@ const Products = () => {
 
         <div className="products-inventory clearfix">
           <div class="product">
-            <img src={About1} alt="tea" className="products-img" />
-            <h3 className="products-title ">Products Title</h3>
+            <img src={blackTea} alt="tea" className="products-img" />
+            <h3 className="products-title ">Black Dragon</h3>
             <h3 className="products-price">6,99 CHF</h3>
           </div>
 
           <div class="product">
-            <img src={About1} alt="tea" className="products-img" />
-            <h3 className="products-title">Products Title</h3>
+            <img src={green} alt="tea" className="products-img" />
+            <h3 className="products-title">Matcha</h3>
             <h3 className="products-price">6,99 CHF</h3>
           </div>
 
           <div class="product">
-            <img src={About1} alt="tea" className="products-img" />
-            <h3 className="products-title">Products Title</h3>
+            <img src={red} alt="tea" className="products-img" />
+            <h3 className="products-title">Rosy dream</h3>
             <h3 className="products-price">6,99 CHF</h3>
           </div>
         </div>

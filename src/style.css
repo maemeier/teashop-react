@@ -6,12 +6,18 @@
 }
 :root {
   --slantedText: "sans-serif";
-  --primaryColor: #698f3f;
+  --primaryColor: #b9a16e;
   --secondaryColor: #fca311;
-  --mainDark: #3a3e3b;
-  --mainWhite: #ffff;
+  --gold: #b9a16e;
+  --mainDark: linear-gradient(
+    257deg,
+    rgba(47, 47, 47, 1) 50%,
+    rgba(28, 28, 28, 1) 100%
+  );
+  --mainWhite: #fbf6f6;
+  --mainHover: #6a5d3f;
   --mainGrey: #e5e5e5;
-  --mainBrown: #6e6757;
+  --mainBrown: #2d242a;
   --hover: linear-gradient(
     277deg,
     rgba(59, 58, 56, 1) 0%,
@@ -39,11 +45,13 @@ h1 {
 .section-subtitle {
   font-size: 1.7rem;
   letter-spacing: var(--letterSpacing);
+  padding-bottom: 0.5rem;
   text-transform: uppercase;
-  color: var(--primaryColor);
+  color: var(--gold);
 }
 .section-title {
   font-size: 1.3rem;
+  padding-bottom: 1rem;
   text-transform: uppercase;
 }
 /*  end Globals*/
@@ -53,7 +61,7 @@ h1 {
 /* Header*/
 .header {
   min-height: 70vh;
-  background: url("./img/tea3.jpg") center/cover no-repeat fixed;
+  background: url("./img/teabg.jpg") center/cover no-repeat;
   position: relative;
 }
 /* end Header*/
@@ -81,7 +89,7 @@ a {
 /* Banner*/
 .banner {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -105,14 +113,14 @@ a {
 .main-btn,
 .banner-btn {
   display: inline-block;
-  background: var(--primaryColor);
+  background: #b9a16e;
   text-decoration: none;
   letter-spacing: var(--letterSpacing);
   text-transform: uppercase;
   padding: 0.8rem 1.2rem;
   color: var(--mainDark);
   font-weight: bold;
-  outline: 0.2rem solid var(--primaryColor);
+  outline: 0.2rem solid var(--gold);
   outline-offset: 4px;
   cursor: pointer;
   border: none;
@@ -246,7 +254,7 @@ div.content-divider {
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing);
   margin-bottom: 1.5rem;
-  color: var(--primaryColor);
+  color: #b9a16e;
 }
 .skill-text {
   font-size: 0.9rem;
@@ -255,7 +263,7 @@ div.content-divider {
   margin: 0 auto;
 }
 .skill:hover {
-  background: var(--primaryColor);
+  background: var(--mainHover);
 }
 .skill:hover .skill-title {
   color: var(--mainWhite);
@@ -302,10 +310,12 @@ div.content-divider {
   padding: 2rem 0;
 }
 .products-img {
-  width: 100%;
+  width: 230px;
   display: block;
+  margin: 0 auto;
   border-radius: 5px;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 30px;
 }
 .products-title {
   color: var(--mainWhite);
@@ -403,6 +413,33 @@ div.content-divider {
   .contact-info {
     padding-top: 3rem;
   }
+  .contact-icon {
+    padding-right: 10px;
+  }
 }
 
 /* end of Contact*/
+
+/* eFooter*/
+.footer {
+  background: var(--mainDark);
+  text-align: center;
+}
+.social-icon {
+  color: var(--mainWhite);
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  transition: var(--mainTransition);
+}
+.social-icon:hover {
+  color: var(--primaryColor);
+}
+.footer-text {
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  letter-spacing: var(--letterSpacing);
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+/* eFooter*/

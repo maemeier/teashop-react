@@ -10,7 +10,6 @@ const Header = () => {
           <button className="banner-btn">Expolre</button>
         </div>
       </div>
-      <div className="content-divider"></div>
     </>
   );
 };

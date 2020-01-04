@@ -1,4 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
@@ -8,7 +12,9 @@ const Contact = () => {
           <div className="contact-info">
             <div className="contact-item">
               <h3 className="contact-title">
-                <span className="contact-icon">{/*add icon*/}</span>
+                <span className="contact-icon">
+                  <FontAwesomeIcon icon={faMapMarkerAlt} />
+                </span>
                 address
               </h3>
               <h3 className="contact-text">
@@ -19,7 +25,9 @@ const Contact = () => {
 
             <div className="contact-item">
               <h3 className="contact-title">
-                <span className="contact-icon">{/*add icon*/}</span>
+                <span className="contact-icon">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                </span>
                 Email
               </h3>
               <h3 className="contact-text"> info@besttea.com</h3>
@@ -27,7 +35,9 @@ const Contact = () => {
 
             <div className="contact-item">
               <h3 className="contact-title">
-                <span className="contact-icon">{/*add icon*/}</span>
+                <span className="contact-icon">
+                  <FontAwesomeIcon icon={faMobileAlt} />
+                </span>
                 Phone
               </h3>
               <h3 className="contact-text"> +49 176 2178 4589</h3>
@@ -35,7 +45,11 @@ const Contact = () => {
           </div>
 
           <div className="contact-form">
-            <form className="form-group">
+            <form
+              action="https://formspree.io/xqkeokgv"
+              method="POST"
+              className="form-group"
+            >
               <input
                 type="text"
                 name="name"
