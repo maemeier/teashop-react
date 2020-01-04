@@ -212,7 +212,9 @@ div.content-divider {
   margin: 0 auto;
   max-width: 26rem;
   padding-top: 10px;
+  padding-bottom: 15px;
 }
+
 @media screen and (min-width: 992px) {
   .about-img,
   .about-info {
