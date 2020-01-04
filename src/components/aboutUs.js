@@ -3,34 +3,35 @@ import About from "../img/tea1.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="about">
-      <div className="section-center clearfix">
-        <div className="about-img">
-          <div className="about-picture-container">
-            <img src={About} alt="tea" className="about-picture" />
+    <div class="about">
+      <div class="section-center clearfix">
+        <div class="about-img">
+          <div class="about-picture-container">
+            <img src={About} alt="tea kettle" class="about-picture" />
+          </div>
+        </div>
+
+        <div class="about-info">
+          <div>
+            <h3 class="section-subtitle">About US</h3>
+            <h2 class="section-title">tea station</h2>
           </div>
 
-          <article className="about-info">
-            <div>
-              <h3 className="section-subtitle">ABout Us</h3>
-              <h2 className="section-title">Tea station</h2>
-            </div>
-            <p className="about-text">
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
-            </p>
-
-            <p className="about-text">
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
-            </p>
-            <a href="about.html" className="main-btn">
-              {" "}
-              learn more
-            </a>
-          </article>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+            dolores.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corrupti, dolores.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Corrupti, dolores.
+          </p>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+            dolores.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corrupti, dolores.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Corrupti, dolores.
+          </p>
+          <a href="about.html" class="main-btn">
+            learn more
+          </a>
         </div>
       </div>
     </div>
