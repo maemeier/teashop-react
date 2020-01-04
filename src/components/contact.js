@@ -19,7 +19,8 @@ const Contact = () => {
               </h3>
               <h3 className="contact-text">
                 {" "}
-                Vorstadt 141, 5607 Hagglingen AG Switzerland
+                Vorstadt 141, 5607 <br />
+                Hagglingen AG Switzerland
               </h3>
             </div>
 
