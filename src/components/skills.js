@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMugHot } from "@fortawesome/free-solid-svg-icons";
-
+import { faTruck } from "@fortawesome/free-solid-svg-icons";
+import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 const Skills = () => {
   return (
@@ -19,7 +20,7 @@ const Skills = () => {
 
       <div className="skill">
         <span className="skill-icon">
-          <FontAwesomeIcon icon={faMugHot} />
+          <FontAwesomeIcon icon={faLeaf} />
         </span>
         <h3 className="skill-title">Relaxation</h3>
         <p className="skill-text">
@@ -41,9 +42,9 @@ const Skills = () => {
 
       <div className="skill">
         <span className="skill-icon">
-          <FontAwesomeIcon icon={faHeart} />
+          <FontAwesomeIcon icon={faTruck} />
         </span>
-        <h3 className="skill-title">Made in Japan</h3>
+        <h3 className="skill-title">Free Shipping</h3>
         <p className="skill-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt
