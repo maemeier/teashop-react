@@ -377,6 +377,9 @@ div.content-divider {
 .contact-text {
   font-size: 0.9rem;
 }
+.contact-icon {
+  padding-right: 10px;
+}
 .form-control {
   display: block;
   width: 100%;
