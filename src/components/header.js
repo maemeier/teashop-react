@@ -4,7 +4,6 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        Header components
         <div className="banner">
           <h3 className="banner-subtitle">Over one hunderd flavour of tea</h3>
           <h1 className="banner-title"> Specially crafted tea</h1>

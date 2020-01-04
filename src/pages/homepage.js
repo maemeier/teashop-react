@@ -3,6 +3,7 @@ import "../style.css";
 import Navbar from "../components/navbar";
 import Header from "../components/header";
 import Skill from "../components/skills";
+import AboutUs from "../components/aboutUs";
 
 const Homepage = () => {
   return (
@@ -10,6 +11,7 @@ const Homepage = () => {
       <Navbar />
       <Header />
       <Skill />
+      <AboutUs />
     </section>
   );
 };
