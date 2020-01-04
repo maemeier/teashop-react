@@ -12,7 +12,7 @@ const Products = () => {
         <div className="products-info">
           <div>
             <h3 class="section-subtitle">check out</h3>
-            <h2 class="section-title text-white">our products</h2>
+            <h2 class="section-title1 ">our products</h2>
           </div>
           <p className="products-text">
             {" "}
