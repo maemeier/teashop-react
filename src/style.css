@@ -270,13 +270,12 @@ div.content-divider {
   overflow: hidden;
 }
 .about-picture {
-  width: 100%;
+  width: 550px;
   display: block;
   transition: var(--mainTransition);
 }
 .about-picture-container:hover .about-picture {
   opacity: 0.5;
-  transform: scale(1.2);
 }
 .about-text {
   margin: 0 auto;
